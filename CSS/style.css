@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body{
+  background-color: #f9f9f9 !important; 
+}
+
+#nav-section{
+  background-color: #0F1319;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.nav-shadow{
+  box-shadow: 0 0 10px rgba(236, 234, 234, 0.09);
+}
+.name{
+  font-size: 21px !important;
+  letter-spacing: 0.5px;
+  color: #fff !important;
+}
+.author-name{
+  font-size: 25px !important;
+  color: #fd005b;
+}
+.nav-title{
+  font-size: 17px !important;
+  color: #fff !important;
+  border-bottom: 1px solid;
+  width: 0%;
+  transition: 0.5s;
+}
+.nav-title:hover{
+  color: #ffc107 !important;
+  border-bottom: 1px solid;
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* home-section */
+#home-section{
+  background-color: #0F1319;
+  border-bottom: 1px solid #fff;
+}
+#home-section .container{
+  position: relative;
+}
+#home-section{
+  color: white;
+}
+#home-section .content-section>h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#home-section .author-img{
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(../img/author.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #fd005b;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 26rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 26rem;
+}
+@keyframes morph{
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+#home-section .content-section-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89vh;
+  gap: 24px;
+}
+
+#home-section .content-section h1>img{
+  width: 62px !important;
+}
+
+#home-section .content-section>p{
+  font-size: 20px;
+}
+
+#home-section .content-section>span{
+  display: flex;
+  gap: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+#home-section .content-section>span>a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+#home-section .content-section>span>a:hover{
+  color: #ffc107;
+}
+
+#home-section .col-8{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.button-content{
+      background: linear-gradient(90deg, hsl(48, 100%, 50%) 0%, hsl(28, 100%, 54%, 100%));
+      padding: 10px 13px;
+      border-radius: 4rem;
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+}
