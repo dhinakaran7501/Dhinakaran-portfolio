@@ -11,10 +11,16 @@ body{
 #nav-section{
   border-top: 1px solid white;
   border-bottom: 1px solid white;
+  /* position: sticky;
+  top: 0;
+  z-index: 999; */
+  background-color: #0F1319 !important;
 }
-
-.nav-shadow{
-  box-shadow: 0 0 10px rgba(236, 234, 234, 0.09);
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+  border: 1px solid #fff;
 }
 .name{
   font-size: 21px !important;
@@ -40,6 +46,7 @@ body{
 }
 
 /* home-section started */
+
 #home-section{
   background-color: #0F1319;
   border-bottom: 1px solid #fff;
@@ -132,11 +139,13 @@ body{
 /* home section ended */
 
 /* skill section started */
+
 #skill-section{
   border-bottom: 1px solid #fff;
+  padding: 20px 0px;
 }
 #skill-section .skills-heading>h2{
-  padding: 20px;
+  padding-bottom: 20px;
   text-align: center;
   color: #ffc107;
 }
@@ -160,11 +169,11 @@ body{
 }
 #skill-section .card-title>h5{
   width: 0%;
-  border-bottom: 1px solid #ffc107;
+  border-bottom: 4px solid #ffc107;
   transition: 0.5s;
 }
 #skill-section .card-sec:hover .card-title>h5{
-  border-bottom: 1px solid #fd005b;
+  border-bottom: 4px solid #fd005b;
   width: 100%;
   transition: 0.5s;
 }
@@ -183,10 +192,41 @@ body{
   justify-content: space-around;
 }
 /* skill section ended */
+
+/*  About me section started  */
+
+#aboutMe-section{
+  padding: 20px 0px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+#aboutMe-section .about-title{
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffc107;
+}
+#aboutMe-section .card{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+#aboutMe-section .card-text{
+  color: white;
+  font-size: 22px;
+  text-align: justify;
+  line-height: 2.1;
+}
+
+/*  About me section ended  */
+
 @media only screen and (max-width:768px){
   #home-section .author-img{
     width: 21rem;
     height: 21rem;
+  }
+
+  #aboutMe-section .card-text{
+    line-height: initial;
   }
 }
 @media only screen and (max-width:575px) {
@@ -206,9 +246,12 @@ body{
 
 
   #skill-section .skill-icon-sec{
-    /* padding: 0px 38px; */
     display: flex;
     flex-direction: column;
+  }
+
+  #aboutMe-section .row{
+    padding: 10px;
   }
 }
 @media only screen and (max-width:384px) {
