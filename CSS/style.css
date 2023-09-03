@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
 }
+a{
+  text-decoration: none !important;
+  color: initial !important;
+}
 body{
   background-color: #0F1319 !important;
 }
@@ -191,6 +195,13 @@ body{
   align-items: center;
   justify-content: space-around;
 }
+#skill-section  .title-icon:hover{
+  transition: 0.5s;
+  color: #fd005b;
+}
+#skill-section  .title-icon{
+  transition: 0.5s;
+}
 /* skill section ended */
 
 /*  About me section started  */
@@ -216,8 +227,171 @@ body{
   text-align: justify;
   line-height: 2.1;
 }
-
+#aboutMe-section .title-icon:hover{
+  color: #fd005b;
+  transition: 0.5s;
+}
+#aboutMe-section .title-icon{
+  transition: 0.5s;
+}
 /*  About me section ended  */
+
+/* Education section Started */
+#education-section{
+  border-bottom: 1px solid #fff;
+  padding: 20px 0px;
+}
+#education-section .education-heading>h2{
+  padding-bottom: 20px;
+  color: #ffc107;
+}
+#education-section .title-icon:hover{
+  color: #fd005b;
+  transition: 0.5s;
+}
+#education-section .title-icon{
+  transition: 0.5s;
+}
+#education-section .col-md-4{
+  width: 55px;
+}
+#education-section .pencil-icon{
+  font-size: 20px;
+}
+#education-section .card-title{
+  text-transform: uppercase;
+  margin-bottom: 0 !important;
+}
+#education-section .institute-name{
+  font-weight: initial;
+  font-size: 19px;
+}
+/* Education Section Ended */
+
+
+/* Project Section started */
+#project-section{
+  padding: 20px 0px;
+  border-bottom: 1px solid #fff;
+}
+#project-section .project-heading>h2{
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffc107;
+}
+#project-section .title-icon:hover{
+  color: #fd005b;
+  transition: 0.5s;
+}
+#project-section .title-icon{
+  transition: 0.5s;
+}
+#project-section .project-description{
+  text-align: center;
+  color: white;
+  font-size: 19px;
+}
+#project-section .card-background{
+  background-color: #e6e2e2;
+  border: 1px solid #fff;
+  height: 360px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#project-section .content-section{
+  height: 100%;
+  overflow: hidden;
+}
+#project-section .image{
+  border: 1px solid white;
+  height: 317px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0px 0px 0px 13px;
+  width: 52%;
+  overflow: hidden;
+}
+#project-section .content-section .image-section>a>img{
+  width: 100%;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+  border-radius: 10px;
+}
+#project-section .content-section .image-section>a>img:hover{
+  transform: translateY(-85.8%);
+  transition: transform 10s ease-in-out 0s;
+}
+#project-section .content-section .image-section1>a>img{
+  width: 100%;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+  border-radius: 10px;
+}
+#project-section .content-section .image-section1>a>img:hover{
+  transform: translateY(-64.8%);
+  transition: transform 10s ease-in-out 0s;
+}
+#project-section .gap50{
+  gap: 50px;
+}
+#project-section .gap51{
+  gap: 50px;
+  flex-direction: row-reverse;
+}
+#project-section .content{
+  width: 25rem !important;
+}
+#project-section .row-width{
+  width: 80%;
+  width: 80%;
+  margin: 15px auto !important;
+}
+#project-section .card-body p{
+  color: #767676;
+  text-align: center;
+  font-size: 19px;
+}
+#project-section .tech{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+#project-section .tech-used{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  color: #000!important;
+  font-family: Mulish,sans-serif!important;
+  font-weight: 600!important;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  transition: 1s;
+  border: 1px solid white;
+}
+#project-section .tech-used:hover{
+  background-color: #ffc107;
+  transition: 1s;
+  border: 1px solid;
+}
+#project-section .code-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  margin-top: 40px;
+  font-size: 20px;
+
+}
+#project-section .code-img .tech-code>a{
+  font-weight: 500;
+  transition: 0.5s;
+}
+#project-section .code-img .tech-code>a:hover{
+  color: blue !important;
+  transition: 0.5s;
+}
+/* Project Section ended */
 
 @media only screen and (max-width:768px){
   #home-section .author-img{
@@ -229,6 +403,7 @@ body{
     line-height: initial;
   }
 }
+
 @media only screen and (max-width:575px) {
   #home-section .content-section>h1{
     font-size: 34px !important;
@@ -254,6 +429,7 @@ body{
     padding: 10px;
   }
 }
+
 @media only screen and (max-width:384px) {
   #home-section .content-section>h1{
     font-size: 26px !important;
